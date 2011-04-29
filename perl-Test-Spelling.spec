@@ -1,17 +1,15 @@
 %define upstream_name    Test-Spelling
-%define upstream_version 0.11
+%define upstream_version 0.13
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    Check for spelling errors in POD
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.gz
-Patch0:     %{upstream_name}-0.11-use-aspell.patch
-
 BuildRequires: perl(Carp)
 BuildRequires: perl(File::Spec)
 BuildRequires: perl(File::Temp)
@@ -29,7 +27,6 @@ _spell_ to do the heavy lifting.
 
 %prep
 %setup -q -n %{upstream_name}-%{upstream_version}
-%patch0 -p 2 -b .aspell
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
