@@ -1,15 +1,15 @@
 %define upstream_name    Test-Spelling
-%define upstream_version 0.14
+%define upstream_version 0.19
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 
 Summary:	Check for spelling errors in POD
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Test/Test-Spelling-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
@@ -72,3 +72,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Sat May 31 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.11-1mdv2009.0
 - first mdv release
+
