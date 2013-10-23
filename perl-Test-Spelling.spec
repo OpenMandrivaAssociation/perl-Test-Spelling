@@ -12,6 +12,8 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Test/Test-Spelling-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(Test::Tester)
+BuildRequires: perl(IPC::Run3)
 BuildRequires:	perl(Carp)
 BuildRequires:	perl(File::Spec)
 BuildRequires:	perl(File::Temp)
