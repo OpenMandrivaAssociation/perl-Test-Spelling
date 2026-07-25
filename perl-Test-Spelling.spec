@@ -1,15 +1,15 @@
 %define upstream_name    Test-Spelling
-%define upstream_version 0.19
+%define upstream_version 0.25
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Check for spelling errors in POD
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Test/Test-Spelling-%{upstream_version}.tar.gz
+Url:		https://github.com/genio/test-spelling
+Source0:	https://cpan.metacpan.org/authors/id/C/CA/CAPOEIRAB/Test-Spelling-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
